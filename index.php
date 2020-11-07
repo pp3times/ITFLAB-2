@@ -31,7 +31,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>ITFLABBootstrap</span></a></h1>
+        <h1 class="text-light"><a href="index.php"><span>ITFxBootstrap</span></a></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -39,6 +39,7 @@
           <li class="active"><a href="index.php">Home</a></li>
           <li><a href="index3.html">Layout</a></li>
           <li><a href="sub-index.html">Cards</a></li>
+          <li><a href="sub-index.html">Table</a></li>
 
 
         </ul>
