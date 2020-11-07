@@ -31,7 +31,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Bootstrap</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>ITFLABBootstrap</span></a></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -56,8 +56,8 @@
             <h1>Create website with<span>Bootstrap</span></h1>
             <h2>INFORMATION TECHNOLOGY FUNDAMENTALS</h2>
             <div class="text-center text-lg-left">
-              <a href="index3.html" class="btn-get-started scrollto">Layout work</a>
-              <a href="sub-index.html" class="btn-get-started scrollto">Card work</a>
+              <a href="index3.html" class="btn-get-started scrollto"> Layout work </a>
+              <a href="sub-index.html" class="btn-get-started scrollto"> Card work </a>
             </div>
           </div>
         </div>
