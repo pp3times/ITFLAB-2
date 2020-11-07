@@ -31,7 +31,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>ITFLABBootstrap</span></a></h1>
+        <h1 class="text-light"><a href="index.php"><span>ITFxBootstrap</span></a></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
