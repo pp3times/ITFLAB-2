@@ -103,7 +103,11 @@
         </div>
     </form>
 </div>-->
+<<<<<<< HEAD
     <div class="container" data-aos="zoom-out" data-aos-delay="300">
+=======
+    <div class="container">
+>>>>>>> main
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
                 <?php
