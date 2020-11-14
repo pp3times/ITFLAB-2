@@ -48,20 +48,7 @@
     </div>
   </header><!-- End Header -->
   <br><br><br><br>
-  <?php
-    $condition  =   '';
-    if(isset($_REQUEST['Name']) and $_REQUEST['Name']!=""){
-        $condition  .=  ' AND Name LIKE "%'.$_REQUEST['Name'].'%" ';
-    }
-    if(isset($_REQUEST['Comment']) and $_REQUEST['Comment']!=""){
-        $condition  .=  ' AND Comment LIKE "%'.$_REQUEST['Comment'].'%" ';
-    }
-    if(isset($_REQUEST['Link']) and $_REQUEST['Link']!=""){
-        $condition  .=  ' AND Link LIKE "%'.$_REQUEST['Link'].'%" ';
-    }
-    $userData   =   $db->getAllRecords('guestbook','*',$condition);
-?>
-  <div class="container">
+
   <!--<form method="post">
     <div class="form-group">
         <label>User Name <span class="text-danger">*</span></label>
@@ -85,6 +72,19 @@
     <form method="get">
         <div class="row">
             <div class="col-sm-2">
+              <?php
+    $condition  =   '';
+    if(isset($_REQUEST['Name']) and $_REQUEST['Name']!=""){
+        $condition  .=  ' AND Name LIKE "%'.$_REQUEST['Name'].'%" ';
+    }
+    if(isset($_REQUEST['Comment']) and $_REQUEST['Comment']!=""){
+        $condition  .=  ' AND Comment LIKE "%'.$_REQUEST['Comment'].'%" ';
+    }
+    if(isset($_REQUEST['Link']) and $_REQUEST['Link']!=""){
+        $condition  .=  ' AND Link LIKE "%'.$_REQUEST['Link'].'%" ';
+    }
+    $userData   =   $db->getAllRecords('guestbook','*',$condition);
+?>
                 <div class="form-group">
                     <label>User Name</label>
                     <input type="text" name="Name" id="Name" class="form-control" value="<?php echo isset($_REQUEST['Name'])?$_REQUEST['Name']:''?>" placeholder="Enter user name">
@@ -118,7 +118,7 @@
 </div>
 
 
-</div>
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
