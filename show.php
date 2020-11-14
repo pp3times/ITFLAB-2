@@ -173,11 +173,11 @@ mysqli_close($conn);
     <form>
        <div class="form-group">
     <label for="exampleInputEmail1">Username</label>
-    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Thanawat Jantawong">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xxxxx@example.com">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
@@ -189,14 +189,13 @@ mysqli_close($conn);
   </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <label class="form-check-label" for="exampleCheck1">I agree to the Terms and Condition ( beta )</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Add user</button>
       </div>
     </div>
   </div>
