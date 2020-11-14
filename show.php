@@ -67,7 +67,7 @@
     </div>
 </form>-->
 
-<div class="col-sm-12">
+<!--<div class="col-sm-12">
     <h5 class="card-title"><i class="fa fa-fw fa-search"></i> Find User</h5>
     <form method="get">
         <div class="row">
@@ -102,23 +102,7 @@
             </div>
         </div>
     </form>
-</div>
-             <?php
-    $condition  =   '';
-    if(isset($_REQUEST['Name']) and $_REQUEST['Name']!=""){
-        $condition  .=  ' AND Name LIKE "%'.$_REQUEST['Name'].'%" ';
-    }
-    if(isset($_REQUEST['Comment']) and $_REQUEST['Comment']!=""){
-        $condition  .=  ' AND Comment LIKE "%'.$_REQUEST['Comment'].'%" ';
-    }
-    if(isset($_REQUEST['Link']) and $_REQUEST['Link']!=""){
-        $condition  .=  ' AND Link LIKE "%'.$_REQUEST['Link'].'%" ';
-    }
-    $userData   =   $db->getAllRecords('guestbook','*',$condition);
-?>
-
-
-
+</div>-->
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
