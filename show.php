@@ -48,6 +48,19 @@
     </div>
   </header><!-- End Header -->
   <br><br><br><br>
+  <?php
+    $condition  =   '';
+    if(isset($_REQUEST['Name']) and $_REQUEST['Name']!=""){
+        $condition  .=  ' AND Name LIKE "%'.$_REQUEST['Name'].'%" ';
+    }
+    if(isset($_REQUEST['Comment']) and $_REQUEST['Comment']!=""){
+        $condition  .=  ' AND Comment LIKE "%'.$_REQUEST['Comment'].'%" ';
+    }
+    if(isset($_REQUEST['Link']) and $_REQUEST['Link']!=""){
+        $condition  .=  ' AND Link LIKE "%'.$_REQUEST['Link'].'%" ';
+    }
+    $userData   =   $db->getAllRecords('guestbook','*',$condition);
+?>
   <div class="container">
   <!--<form method="post">
     <div class="form-group">
@@ -66,19 +79,6 @@
         <button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary"><i class="fa fa-fw fa-plus-circle"></i> Add User</button>
     </div>
 </form>-->
-<?php
-    $condition  =   '';
-    if(isset($_REQUEST['Name']) and $_REQUEST['Name']!=""){
-        $condition  .=  ' AND Name LIKE "%'.$_REQUEST['Name'].'%" ';
-    }
-    if(isset($_REQUEST['Comment']) and $_REQUEST['Comment']!=""){
-        $condition  .=  ' AND Comment LIKE "%'.$_REQUEST['Comment'].'%" ';
-    }
-    if(isset($_REQUEST['Link']) and $_REQUEST['Link']!=""){
-        $condition  .=  ' AND Link LIKE "%'.$_REQUEST['Link'].'%" ';
-    }
-    $userData   =   $db->getAllRecords('guestbook','*',$condition);
-?>
 
 <div class="col-sm-12">
     <h5 class="card-title"><i class="fa fa-fw fa-search"></i> Find User</h5>
