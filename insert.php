@@ -12,9 +12,10 @@ $name = $_POST['name'];
 $comment = $_POST['comment'];
 $mail = $_POST['mail'];
 $password = $_POST['password'];
+$tel = $_POST['tel'];
 
 
-$sql = "INSERT INTO guestbook (name , comment , mail, password) VALUES ('$name', '$comment', '$mail', '$password')";
+$sql = "INSERT INTO guestbook (name , comment , mail, password, tel) VALUES ('$name', '$comment', '$mail', '$password', $tel)";
 ?>
 <?php
 if (mysqli_query($conn, $sql)) {
