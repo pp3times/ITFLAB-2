@@ -172,10 +172,10 @@ mysqli_close($conn);
         </button>
       </div>
       <div class="modal-body">
-    <form action = "insert.php">
+    <form action = "insert.php" method = "post" id="CommentForm" >
        <div class="form-group">
     <label for="exampleInputusername">Username</label>
-    <input type="text" class="form-control" id="inlineFormInputName" name="name" placeholder="Thanawat Jantawong">
+    <input type="text" class="form-control" name = "name" id="idName" placeholder="Thanawat Jantawong">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -191,7 +191,7 @@ mysqli_close($conn);
   </div>
  <div class="form-group">
     <label for="rate">Rate us!</label>
-<input type="text" id="comment" class="form-control" name="comment">
+<input type="text" name = "comment" id="idComment" class="form-control" name="comment">
 <small class="form-text text-muted">
   Comment our product .
 </small>
