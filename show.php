@@ -177,8 +177,15 @@ mysqli_close($conn);
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="inputPassword5">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<small id="passwordHelpBlock" class="form-text text-muted">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</small>
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Name/Last-name</label>
+    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
   </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
