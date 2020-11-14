@@ -172,7 +172,7 @@ mysqli_close($conn);
         </button>
       </div>
       <div class="modal-body">
-    <form>
+    <form action = "insert.php">
        <div class="form-group">
     <label for="exampleInputusername">Username</label>
     <input type="text" class="form-control" id="inlineFormInputName" name="name" placeholder="Thanawat Jantawong">
@@ -200,12 +200,12 @@ mysqli_close($conn);
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">I agree to the Terms and Condition ( beta )</label>
   </div>
-</form>
-    </div>
-      <div class="modal-footer">
+  <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary" name="btn-save">Add user</button>
       </div>
+</form>
+    </div>
     </div>
   </div>
 </div>
