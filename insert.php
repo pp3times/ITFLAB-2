@@ -8,13 +8,13 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$Name = $_POST['Name'];
-$Comment = $_POST['Comment'];
+$name = $_POST['name'];
+$comment = $_POST['comment'];
 $mail = $_POST['mail'];
 $password = $_POST['password'];
 
 
-$sql = "INSERT INTO guestbook (Name , Comment , mail, password) VALUES ('$Name', '$Comment', '$mail', '$password')";
+$sql = "INSERT INTO guestbook (name , comment , mail, password) VALUES ('$name', '$comment', '$mail', '$password')";
 ?>
 <?php
 if (mysqli_query($conn, $sql)) {
