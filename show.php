@@ -156,6 +156,40 @@ mysqli_close($conn);
 
     </div>
     </div>
+
+<?php
+if(isset($_POST['btn-save'])){ // test sur le bouton. 
+	$name = $_POST['name']; // affectation des valeur evoier par la method post.
+	$mail = $_POST['mail'];
+	$password = $_POST['password'];
+	$comment = $_POST['comment'];
+	if($itflab->create($name,$mail,$password,$comment)){ // test sur l'execution du requete, 
+        header("Location: show.php?inserted");    // si tout passe bien returne true, et on recharge la page
+    }else{                                            // mais avec "inserted" comme paramétre. 
+		header("Location: show.php?failure");     // sinon on recharge la page avec "failure" comme paramétre.
+	}}
+?>
+
+<?php
+if(isset($_GET['inserted'])){ // alors si on a on paramétre "inserted", on mets un message:
+	?>
+    <div class="container">
+	   <div class="alert alert-info">
+        success <!-- le message a afficher avec un style de bootstrap de success--> 
+	   </div>
+	</div>
+    <?php
+}else if(isset($_GET['failure'])){ // et sinon (on a on paramétre "failure"), on mets u messaga:
+	?>
+    <div class="container">
+	   <div class="alert alert-warning">
+        Failed <!--le message-->
+	   </div>
+	</div>
+    <?php
+    }
+?>
+
                 <!-- Button trigger modal -->
 
 
@@ -172,19 +206,26 @@ mysqli_close($conn);
       <div class="modal-body">
     <form>
        <div class="form-group">
-    <label for="exampleInputEmail1">Username</label>
-    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Thanawat Jantawong">
+    <label for="exampleInputusername">Username</label>
+    <input type="text" class="form-control" id="inlineFormInputName" name="name" placeholder="Thanawat Jantawong">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xxxxx@example.com">
+    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" aria-describedby="emailHelp" placeholder="xxxxx@example.com">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="inputPassword5">Password</label>
-<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<input type="password" id="inputPassword5" class="form-control" name="password" aria-describedby="passwordHelpBlock">
 <small id="passwordHelpBlock" class="form-text text-muted">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</small>
+  </div>
+ <div class="form-group">
+    <label for="rate">Rate us!</label>
+<input type="text" id="comment" class="form-control" name="comment">
+<small class="form-text text-muted">
+  Comment our product .
 </small>
   </div>
   <div class="form-group form-check">
@@ -195,7 +236,7 @@ mysqli_close($conn);
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add user</button>
+        <button type="button" class="btn btn-primary" name="btn-save">Add user</button>
       </div>
     </div>
   </div>
