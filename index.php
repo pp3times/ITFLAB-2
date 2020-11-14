@@ -39,7 +39,7 @@
           <li class="active"><a href="index.php">Home</a></li>
           <li><a href="index3.html">Layout</a></li>
           <li><a href="sub-index.html">Cards</a></li>
-          <li><a href="sub-index.html">Table</a></li>
+          <li><a href="show.php">Table</a></li>
 
 
         </ul>
@@ -59,7 +59,7 @@
             <div class="text-center text-lg-left">
               <a href="index3.html" class="btn-get-started scrollto"> Layout work </a>
               <a href="sub-index.html" class="btn-get-started scrollto"> Card work </a>
-              <a href="#" class="btn-get-started scrollto">Table work</a>
+              <a href="show.php" class="btn-get-started scrollto">Table work</a>
             </div>
           </div>
         </div>
