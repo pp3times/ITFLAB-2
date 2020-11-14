@@ -8,9 +8,9 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$link = $_POST['link'];
+$name = $_POST['Name'];
+$comment = $_POST['Comment'];
+$mail = $_POST['mail'];
 $password = $_POST['password'];
 
 
@@ -21,7 +21,7 @@ if (mysqli_query($conn, $sql)) {
     ?>
         <div class="container">
 	   <div class="alert alert-info">
-        success <!-- le message a afficher avec un style de bootstrap de success--> 
+        success 
 	   </div>
 	</div>
     <?php
@@ -29,7 +29,7 @@ if (mysqli_query($conn, $sql)) {
       	?>
     <div class="container">
 	   <div class="alert alert-warning">
-        Failed <!--le message-->
+        Failed
 	   </div>
 	</div>
     <?php
