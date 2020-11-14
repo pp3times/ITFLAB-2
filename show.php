@@ -157,38 +157,6 @@ mysqli_close($conn);
     </div>
     </div>
 
-<?php
-if(isset($_POST['btn-save'])){ // test sur le bouton. 
-	$name = $_POST['name']; // affectation des valeur evoier par la method post.
-	$mail = $_POST['mail'];
-	$password = $_POST['password'];
-	$comment = $_POST['comment'];
-	if($itflab->create($name,$mail,$password,$comment)){ // test sur l'execution du requete, 
-        header("Location: show.php?inserted");    // si tout passe bien returne true, et on recharge la page
-    }else{                                            // mais avec "inserted" comme paramétre. 
-		header("Location: show.php?failure");     // sinon on recharge la page avec "failure" comme paramétre.
-	}}
-?>
-
-<?php
-if(isset($_GET['inserted'])){ // alors si on a on paramétre "inserted", on mets un message:
-	?>
-    <div class="container">
-	   <div class="alert alert-info">
-        success <!-- le message a afficher avec un style de bootstrap de success--> 
-	   </div>
-	</div>
-    <?php
-}else if(isset($_GET['failure'])){ // et sinon (on a on paramétre "failure"), on mets u messaga:
-	?>
-    <div class="container">
-	   <div class="alert alert-warning">
-        Failed <!--le message-->
-	   </div>
-	</div>
-    <?php
-    }
-?>
 
                 <!-- Button trigger modal -->
 

@@ -11,14 +11,28 @@ if (mysqli_connect_errno($conn))
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
+$password = $_POST['password'];
 
 
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
-
-
+$sql = "INSERT INTO guestbook (Name , Comment , mail, password) VALUES ('$name', '$comment', '$mail', '$password')";
+?>
+<?php
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    ?>
+        <div class="container">
+	   <div class="alert alert-info">
+        success <!-- le message a afficher avec un style de bootstrap de success--> 
+	   </div>
+	</div>
+    <?php
   } else {
+      	?>
+    <div class="container">
+	   <div class="alert alert-warning">
+        Failed <!--le message-->
+	   </div>
+	</div>
+    <?php
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
   
