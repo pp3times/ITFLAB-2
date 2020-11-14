@@ -134,12 +134,12 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-                        <tr>
-                            <td><?php echo $Result['Name'];?>
-            </div>
+            <tr>
+            <td><?php echo $Result['name'];?>
             </td>
-            <td><?php echo $Result['Comment'];?></td>
-            <td><?php echo $Result['Link'];?></td>
+            <td><?php echo $Result['comment'];?></td>
+            <td><?php echo $Result['mail'];?></td>
+            <td><?php echo $Result['tel'];?></td>
             </tr>
             <?php
 }
@@ -196,6 +196,15 @@ mysqli_close($conn);
   Comment our product .
 </small>
   </div>
+
+<div class="form-group">
+    <label for="tel">Tel</label>
+<input type="text" name = "tel" id="idtel" class="form-control">
+<small class="form-text text-muted">
+  +66xx-xxx-xxxx
+</small>
+  </div>
+
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">I agree to the Terms and Condition ( beta )</label>
