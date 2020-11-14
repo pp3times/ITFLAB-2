@@ -1,7 +1,7 @@
 <?php
 
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflab', 'PooMlmp99', 'itflab', 3306);
+mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
