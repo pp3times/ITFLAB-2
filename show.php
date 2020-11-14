@@ -146,14 +146,7 @@ while($Result = mysqli_fetch_array($res))
 ?>
             </tbody>
             </table>
-            <?php
-mysqli_close($conn);
-?>
-        </div>
-    </div>
-    </div>
-
-<!-- Button trigger modal -->
+            <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
 </button>
@@ -193,6 +186,15 @@ mysqli_close($conn);
     </div>
   </div>
 </div>
+<!-- End -->
+            <?php
+mysqli_close($conn);
+?>
+        </div>
+    </div>
+    </div>
+
+
 
     
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
