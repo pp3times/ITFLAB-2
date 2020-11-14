@@ -440,7 +440,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 50px;
-  border-left: 50px;
   transition: 0.5s;
   color: #fff;
   background: #1acc8d;
