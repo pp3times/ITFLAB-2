@@ -146,16 +146,18 @@ while($Result = mysqli_fetch_array($res))
 ?>
             </tbody>
             </table>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
             <?php
 mysqli_close($conn);
 ?>
         </div>
 
     </div>
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
+    </div>
+                <!-- Button trigger modal -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -193,7 +195,6 @@ mysqli_close($conn);
   </div>
 </div>
 <!-- End -->
-    </div>
 
 
 
