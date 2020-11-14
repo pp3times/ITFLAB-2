@@ -59,6 +59,7 @@
             <div class="text-center text-lg-left">
               <a href="index3.html" class="btn-get-started scrollto"> Layout work </a>
               <a href="sub-index.html" class="btn-get-started scrollto"> Card work </a>
+              <a href="#" class="btn-get-started scrollto">Table work</a>
             </div>
           </div>
         </div>
