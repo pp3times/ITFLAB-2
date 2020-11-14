@@ -236,7 +236,7 @@ if(isset($_GET['inserted'])){ // alors si on a on paramétre "inserted", on mets
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" name="btn-save">Add user</button>
+        <button type="submit" class="btn btn-primary" name="btn-save">Add user</button>
       </div>
     </div>
   </div>
