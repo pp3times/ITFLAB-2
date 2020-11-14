@@ -26,7 +26,8 @@
 </head>
 
 <body>
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background: rgba(1, 4, 136, 0.9);">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
@@ -35,9 +36,10 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="index3.html">Layout</a></li>
           <li><a href="sub-index.html">Cards</a></li>
+          <li class="active"><a href="show.php">Table</a></li>
 
 
         </ul>
