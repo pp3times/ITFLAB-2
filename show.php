@@ -290,18 +290,13 @@ mysqli_close($conn);
   </div>
 </div>
 <!-- End -->
-<script>
-$(document).ready(function () {
-        $('.editbtn').on('click', function () {
-            $('#editmodal').modal('show');
-        });
-    });
-</script>
+
 
 
 
 
 </body>
+
 
 <!--
 <script>
