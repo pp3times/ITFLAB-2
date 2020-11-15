@@ -232,39 +232,21 @@ mysqli_close($conn);
 <!-- End -->
 
 
-
-    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="container">
-    <h1>test</h1>
-    </div>
-<<<<<<< HEAD
-=======
-    </div>
-  </div>
-</div>
-<!-- End -->
-
-<<<<<<< HEAD
-
+<script>
+$(document).ready(function () {
+        $('.editbtn').on('click', function () {
+            $('#editmodal').modal('show');
+        });
+    });
+</script>
 
 
 
 </body>
 
 
-=======
 
 
-
-
->>>>>>> main
-</body>
-
-<<<<<<< HEAD
-=======
->>>>>>> main
->>>>>>> main
 <!--
 <script>
 const { value: accept } = await Swal.fire({
