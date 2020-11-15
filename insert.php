@@ -27,7 +27,11 @@ $sql = "INSERT INTO guestbook (name , comment , mail, password, tel) VALUES ('$n
 <?php
 if (mysqli_query($conn, $sql)) {
     ?>
-        <script>swal("Good job!", "You clicked the button!", "success");</script>
+        <div class="container">
+	   <div class="alert alert-info">
+        Success
+	   </div>
+	</div>
     <?php
   } else {
       	?>
