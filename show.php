@@ -290,6 +290,12 @@ mysqli_close($conn);
   </div>
 </div>
 <!-- End -->
+
+
+
+
+
+</body>
 <script>
 $(document).ready(function () {
         $('.editbtn').on('click', function () {
@@ -297,11 +303,6 @@ $(document).ready(function () {
         });
     });
 </script>
-
-
-
-
-</body>
 
 <!--
 <script>
