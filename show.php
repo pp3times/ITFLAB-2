@@ -148,7 +148,7 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['mail'];?></td>
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
-            <td><button type="button" class="btn btn-success">Edit</button></td>
+            <td><button type="button" class="btn btn-success editbtn">Edit</button></td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
             </tr>
             <?php
