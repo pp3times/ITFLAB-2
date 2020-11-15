@@ -239,6 +239,28 @@ mysqli_close($conn);
     <h1>test</h1>
     </div>
 </body>
+
+<!--
+<script>
+const { value: accept } = await Swal.fire({
+  title: 'Terms and conditions',
+  input: 'checkbox',
+  inputValue: 1,
+  inputPlaceholder:
+    'I agree with the terms and conditions',
+  confirmButtonText:
+    'Continue&nbsp;<i class="fa fa-arrow-right"></i>',
+  inputValidator: (result) => {
+    return !result && 'You need to agree with T&C'
+  }
+})
+
+if (accept) {
+  Swal.fire('You agreed with T&C :)')
+}
+</script>
+-->
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -249,6 +271,8 @@ mysqli_close($conn);
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
