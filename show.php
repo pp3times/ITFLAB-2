@@ -130,6 +130,12 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
                             <th>
                                 <div align="center">Comment </div>
                             </th>
+                            <th>
+                                <div align="center">Edit </div>
+                            </th>
+                            <th>
+                                <div align="center">Delete </div>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -142,6 +148,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['mail'];?></td>
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
+            <td><button>Edit</button></td>
+            <td><button>Delete</button></td>
             </tr>
             <?php
 }
