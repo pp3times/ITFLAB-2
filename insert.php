@@ -27,11 +27,7 @@ $sql = "INSERT INTO guestbook (name , comment , mail, password, tel) VALUES ('$n
 <?php
 if (mysqli_query($conn, $sql)) {
     ?>
-        <div class="container">
-	   <div class="alert alert-info">
-        success 
-	   </div>
-	</div>
+        <script>swal("Good job!", "You clicked the button!", "success");</script>
     <?php
   } else {
       	?>
@@ -53,3 +49,5 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
