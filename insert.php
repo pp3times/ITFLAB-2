@@ -17,6 +17,13 @@ $tel = $_POST['tel'];
 
 $sql = "INSERT INTO guestbook (name , comment , mail, password, tel) VALUES ('$name', '$comment', '$mail', '$password', $tel)";
 ?>
+<body class="bg-light py-5">
+	<div class="container text-dark">
+		<div class="row">
+			<div class="col-12 col-lg-8 offset-lg-2">
+				<div class="card shadow">
+					<div class="card-body">
+						<h2 align="center">
 <?php
 if (mysqli_query($conn, $sql)) {
     ?>
@@ -32,6 +39,13 @@ if (mysqli_query($conn, $sql)) {
 	   <div class="alert alert-warning">
         Failed
 	   </div>
+	</div>
+    </h2>
+						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
     <?php
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
