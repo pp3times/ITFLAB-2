@@ -151,8 +151,7 @@ while($Result = mysqli_fetch_array($res))
             <td><button type="button" class="btn btn-warning editbtn">Edit</button></td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
             </tr>
-            <?php
-}
+            <?php}
 ?>
             </tbody>
             </table>
@@ -292,8 +291,8 @@ mysqli_close($conn);
 </div>
 <!-- End -->
 <script>
-    $(document).ready(function () {
-        $('.editbtn').on('click', function() {
+$(document).ready(function () {
+        $('.editbtn').on('click', function () {
             $('#editmodal').modal('show');
         });
     });
