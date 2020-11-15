@@ -291,6 +291,7 @@ mysqli_close($conn);
 </div>
 <!-- End -->
 
+<<<<<<< HEAD
 
 
 
@@ -298,6 +299,21 @@ mysqli_close($conn);
 </body>
 
 
+=======
+
+
+
+
+</body>
+<script>
+$(document).ready(function () {
+        $('.editbtn').on('click', function () {
+            $('#editmodal').modal('show');
+        });
+    });
+</script>
+
+>>>>>>> main
 <!--
 <script>
 const { value: accept } = await Swal.fire({
