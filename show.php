@@ -238,8 +238,33 @@ mysqli_close($conn);
     <div class="container">
     <h1>test</h1>
     </div>
+<<<<<<< HEAD
+=======
+    </div>
+  </div>
+</div>
+<!-- End -->
+
+<<<<<<< HEAD
+
+
+
+
 </body>
 
+
+=======
+
+
+
+
+>>>>>>> main
+</body>
+
+<<<<<<< HEAD
+=======
+>>>>>>> main
+>>>>>>> main
 <!--
 <script>
 const { value: accept } = await Swal.fire({
