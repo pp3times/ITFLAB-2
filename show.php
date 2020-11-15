@@ -182,7 +182,7 @@ mysqli_close($conn);
         </button>
       </div>
       <div class="modal-body">
-    <form action = "show.php" method = "post" id="CommentForm" >
+    <form action = "insert.php" method = "post" id="CommentForm" >
        <div class="form-group">
     <label for="exampleInputusername">Username</label>
     <input type="text" class="form-control" name = "name" id="idName" placeholder="Thanawat Jantawong" required>
@@ -239,40 +239,6 @@ mysqli_close($conn);
     <h1>test</h1>
     </div>
 </body>
-
-<?php
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$mail = $_POST['mail'];
-$password = $_POST['password'];
-$tel = $_POST['tel'];
-
-
-$sql = "INSERT INTO guestbook (name , comment , mail, password, tel) VALUES ('$name', '$comment', '$mail', '$password', $tel)";
-?>
-
-<?php
-if (mysqli_query($conn, $sql)) {
-    ?>
-        <div class="container">
-	   <div class="alert alert-info">
-        success 
-	   </div>
-	</div>
-    <?php
-  } else {
-      	?>
-    <div class="container">
-	   <div class="alert alert-warning">
-        Failed
-	   </div>
-	</div>
-    <?php
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
-  
-mysqli_close($conn);
-?>
 
 <!--
 <script>
