@@ -148,7 +148,7 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['mail'];?></td>
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
-            <td><a class="btn btn-warning editbtn" hred="edit.php">Edit</a></td>
+            <td><a class="btn btn-warning editbtn" href="edit.php">Edit</a></td>
             <td><button type="button" class="btn btn-danger editbtn" >Delete</button></td>
             </tr>
             <?php
@@ -247,7 +247,7 @@ mysqli_close($conn);
 ?>
 
 
-<!-- Modal -->
+<!-- Modal --
 <div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -304,16 +304,6 @@ mysqli_close($conn);
 </div>
 <!-- End -->
 
-
-
-
-<script>
-$(document).ready(function () {
-        $('.editbtn').on('click', function () {
-            $('#editmodal').modal('show');
-        });
-    });
-</script>
 
 
 
