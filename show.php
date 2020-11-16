@@ -259,25 +259,26 @@ mysqli_close($conn);
       </div>
       <div class="modal-body">
     <form action = "update.php" method = "post" id="CommentForm" >
+    <input type="text" name="id" value="<?php echo $data['ID']; ?>" class="form-control d-none" required>
        <div class="form-group">
     <label for="exampleInputusername">Username</label>
-    <input type="text" class="form-control" name = "name" id="idName" placeholder="Thanawat Jantawong" required>
+    <input type="text" class="form-control" name = "name" value="<?php echo $data['name']; ?>" id="idName" placeholder="Thanawat Jantawong"  required>
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" aria-describedby="emailHelp" placeholder="xxxxx@example.com" required>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" value="<?php echo $data['mail']; ?>" aria-describedby="emailHelp" placeholder="xxxxx@example.com" required>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="inputPassword5">Password</label>
-<input type="password" id="inputPassword5" class="form-control" name="password" aria-describedby="passwordHelpBlock" required>
+<input type="password" id="inputPassword5" class="form-control" name="password" value="<?php echo $data['password']; ?>" aria-describedby="passwordHelpBlock" required>
 <small id="passwordHelpBlock" class="form-text text-muted">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </small>
   </div>
  <div class="form-group">
     <label for="rate">Rate us!</label>
-<input type="text" name = "comment" id="idComment" class="form-control" name="comment">
+<input type="text" name = "comment" id="idComment" value="<?php echo $data['comment']; ?>" class="form-control" name="comment">
 <small class="form-text text-muted">
   Tell me ypur opinion about my site.⚡️
 </small>
@@ -285,19 +286,15 @@ mysqli_close($conn);
 
 <div class="form-group">
     <label for="tel">Tel</label>
-<input type="tel" name = "tel" id="idtel" class="form-control" pattern="+[0-9]{4}-[0-9]{3}-[0-9]{4}"
+<input type="tel" name = "tel" value="<?php echo $data['tel']; ?>" id="idtel" class="form-control" pattern="+[0-9]{4}-[0-9]{3}-[0-9]{4}"
        required>
 <small class="form-text text-muted">
   +66xx-xxx-xxxx
 </small>
   </div>
 
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-    <label class="form-check-label" for="exampleCheck1">I agree to the Terms and Condition ( beta )</label>
-  </div>
   <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="shop.php" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary" name="btn-save" id="commentBtn">Add user</button>
       </div>
 </form>
