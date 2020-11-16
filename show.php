@@ -160,12 +160,6 @@ while($Result = mysqli_fetch_array($res))
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Add user.
 </button>
-<link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap.js"></script>
-<form action="#" method="POST">
-  <button class='btn btn-danger btn-xs' type="submit" name="remove_levels" value="delete"><span class="fa fa-times"></span> delete</button>
-</form>
 
             <?php
 mysqli_close($conn);
