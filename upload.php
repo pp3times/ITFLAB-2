@@ -2,11 +2,13 @@
 	$conn = mysqli_connect('itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab');
 
 	$name = $_POST['name'];
+	$mail = $_POST['mail'];
+	$password = $_POST['password'];
 	$comment = $_POST['comment'];
-	$link = $_POST['link'];
+	$tel = $_POST['tel'];
 	$id = $_POST['id'];
 
-	$sql = 'UPDATE guestbook SET Name = "'.$name.'", Comment = "'.$comment.'", Link = "'.$link.'" WHERE ID = '.$id.'';
+	$sql = 'UPDATE guestbook SET name = "'.$name.'", mail = "'.$mail.'",password = "'.$password.'", comment = "'.$comment.'", tel = "'.$tel.'" WHERE ID = '.$id.'';
 ?>
 <!DOCTYPE html>
 <html>
