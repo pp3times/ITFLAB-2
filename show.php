@@ -148,8 +148,9 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
             <td><center><a href="edit.php?ID=<?php echo $Result['ID'];?>"
-                                                class="btn btn-sm btn-warning">EDIT</a></center></td>
-            <td><center><button type="button" class="btn btn-sm btn-danger" >Delete</button></center></td>
+                                                class="btn btn-sm btn-warning">Edit</a></center></td>
+            <td><center><a href="remove.php?ID=<?php echo $Result['ID'];?>"
+                                                class="btn btn-sm btn-danger mb-2 mb-md-0">Delete</a></center></td>
             </tr>
             <?php
 }
