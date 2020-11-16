@@ -149,8 +149,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
             <td><a href="edit.php?ID=<?php echo $Result['ID'];?>"
-                                                class="btn btn-sm btn-dark">EDIT</a></td>
-            <td><button type="button" class="btn btn-danger editbtn" >Delete</button></td>
+                                                class="btn btn-sm btn-warning">EDIT</a></td>
+            <td><button type="button" class="btn btn-sm btn-danger" >Delete</button></td>
             </tr>
             <?php
 }
@@ -158,7 +158,7 @@ while($Result = mysqli_fetch_array($res))
             </tbody>
             </table>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Add user.
 </button>
             <?php
 mysqli_close($conn);
