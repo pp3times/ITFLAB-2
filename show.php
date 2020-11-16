@@ -231,7 +231,20 @@ mysqli_close($conn);
 </div>
 <!-- End -->
 
+<?php
+	$conn = mysqli_connect('itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab');
 
+	$id = $_GET['ID'];
+
+	$sql = 'SELECT * FROM guestbook WHERE ID = '.$id.'';
+	$query = mysqli_query($conn, $sql);
+	if(!$query) {
+		header('Location: show.php');
+	}
+	else {
+		$data = mysqli_fetch_assoc($query);
+	}
+?>
 
 
 <!-- Modal -->
@@ -245,7 +258,7 @@ mysqli_close($conn);
         </button>
       </div>
       <div class="modal-body">
-    <form action = "insert.php" method = "post" id="CommentForm" >
+    <form action = "update.php" method = "post" id="CommentForm" >
        <div class="form-group">
     <label for="exampleInputusername">Username</label>
     <input type="text" class="form-control" name = "name" id="idName" placeholder="Thanawat Jantawong" required>
