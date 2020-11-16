@@ -6,6 +6,7 @@
     $mail = $_POST['mail'];
     $password = $_POST['password'];
     $tel = $_POST['tel'];
+	$id = $_POST['id'];
 
 	$sql = 'UPDATE guestbook SET name = "'.$name.'", comment = "'.$comment.'", mail = "'.$mail.'", password = "'.$password'", tel = "'.$tel'" WHERE ID = '.$id.'';
 ?>
@@ -37,17 +38,11 @@
 							}
 						?>
 						</h2>
-                        <p>Web page redirects after 5 seconds.</p>
-						<p align="center" class="mt-4 mb-0"><a href="show.php" class="btn btn-sm btn-warning">BACK</a></p>
+						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-    <script>
-         setTimeout(function(){
-            window.location.href = 'show.php';
-         }, 5000);
-      </script>
 </body>
 </html>
