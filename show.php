@@ -148,8 +148,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['mail'];?></td>
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
-            <td><button type="button" class="btn btn-success editbtn" data-toggle="modal">Edit</button></td>
-            <td><button type="button" class="btn btn-danger editbtn" data-toggle="modal" data-target="#editmodal">Delete</button></td>
+            <td><a class="btn btn-warning editbtn" hred="edit.php">Edit</a></td>
+            <td><button type="button" class="btn btn-danger editbtn" >Delete</button></td>
             </tr>
             <?php
 }
@@ -262,11 +262,11 @@ mysqli_close($conn);
     <input type="text" name="id" value="<?php echo $data['ID']; ?>" class="form-control d-none" required>
        <div class="form-group">
     <label for="exampleInputusername">Username</label>
-    <input type="text" class="form-control" name = "name" value="<?php echo $data['name']; ?>" id="idName" placeholder="Thanawat Jantawong"  required>
+    <input type="text" class="form-control" name = "name" value="<?php echo $data['name']; ?>" id="idName" required>
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" value="<?php echo $data['mail']; ?>" aria-describedby="emailHelp" placeholder="xxxxx@example.com" required>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" value="<?php echo $data['mail']; ?>" aria-describedby="emailHelp" required>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
