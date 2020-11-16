@@ -1,15 +1,3 @@
-<?php
-	$conn = mysqli_connect('itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab');
-
-	$name = $_POST['name'];
-    $comment = $_POST['comment'];
-    $mail = $_POST['mail'];
-    $password = $_POST['password'];
-    $tel = $_POST['tel'];
-	$id = $_POST['id'];
-
-	$sql = 'UPDATE guestbook SET name = "'.$name.'", comment = "'.$comment.'", mail = "'.$mail.'", password = "'.$password'", tel = "'.$tel'" WHERE ID = '.$id.'';
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +11,18 @@
 	</style>
 </head>
 <body class="bg-light py-5">
+<?php
+	$conn = mysqli_connect('itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab');
+
+	$name = $_POST['name'];
+    $comment = $_POST['comment'];
+    $mail = $_POST['mail'];
+    $password = $_POST['password'];
+    $tel = $_POST['tel'];
+	$id = $_POST['id'];
+
+	$sql = 'UPDATE guestbook SET name = "'.$name.'", comment = "'.$comment.'", mail = "'.$mail.'", password = "'.$password'", tel = "'.$tel'" WHERE ID = '.$id.'';
+?>
 	<div class="container text-dark">
 		<div class="row">
 			<div class="col-12 col-lg-8 offset-lg-2">
