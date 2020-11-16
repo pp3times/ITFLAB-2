@@ -148,7 +148,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['mail'];?></td>
             <td><?php echo $Result['tel'];?></td>
             <td><?php echo $Result['comment'];?></td>
-            <td><a class="btn btn-warning editbtn" href="edit.php">Edit</a></td>
+            <td><a href="edit.php?ID=<?php echo $Result['ID'];?>"
+                                                class="btn btn-sm btn-dark">EDIT</a></td>
             <td><button type="button" class="btn btn-danger editbtn" >Delete</button></td>
             </tr>
             <?php
