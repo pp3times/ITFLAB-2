@@ -46,7 +46,7 @@
 	</div>
     <script>
          setTimeout(function(){
-            window.location.href = 'https://www.tutorialspoint.com/javascript/';
+            window.location.href = 'show.php';
          }, 5000);
       </script>
 </body>
