@@ -33,7 +33,7 @@
 						<div class="row">
 							<div class="col-6"><h1 class="text-monospace">Edit</h1></div>
 						</div>
-						<form action="update.php" method="post">
+						<form action="upload.php" method="post">
 							<input type="text" name="id" value="<?php echo $data['ID']; ?>" class="form-control d-none" required>
 							<div class="form-group">
 								<label>Name</label>
