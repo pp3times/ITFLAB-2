@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="img/logo.svg" class="img-fluid animated" alt="">
+          <img src="img/logonew.svg" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
