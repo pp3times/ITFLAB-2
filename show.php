@@ -49,61 +49,6 @@
     </div>
   </header><!-- End Header -->
   <br><br><br><br>
-
-  <!--<form method="post">
-    <div class="form-group">
-        <label>User Name <span class="text-danger">*</span></label>
-        <input type="text" name="Name" id="Name" class="form-control" placeholder="Enter user name" required>
-    </div>
-    <div class="form-group">
-        <label>User Email <span class="text-danger">*</span></label>
-        <input type="email" name="Comment" id="Comment" class="form-control" placeholder="Enter user email" required>
-    </div>
-    <div class="form-group">
-        <label>User Phone <span class="text-danger">*</span></label>
-        <input type="tel" name="Link" id="Link" class="form-control" placeholder="Enter user phone" required>
-    </div>
-    <div class="form-group">
-        <button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary"><i class="fa fa-fw fa-plus-circle"></i> Add User</button>
-    </div>
-</form>-->
-
-<!--<div class="col-sm-12">
-    <h5 class="card-title"><i class="fa fa-fw fa-search"></i> Find User</h5>
-    <form method="get">
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="form-group">
-                    <label>User Name</label>
-                    <input type="text" name="Name" id="Name" class="form-control" value="<?php echo isset($_REQUEST['Name'])?$_REQUEST['Name']:''?>" placeholder="Enter user name">
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="form-group">
-                    <label>User Email</label>
-                    <input type="email" name="Comment" id="Comment" class="form-control" value="<?php echo isset($_REQUEST['Comment'])?$_REQUEST['Comment']:''?>" placeholder="Enter user email">
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="form-group">
-                    <label>User Phone</label>
-                    <input type="tel" class="tel form-control" name="Link" id="Link" x-autocompletetype="tel" value="<?php echo isset($_REQUEST['Link'])?$_REQUEST['Link']:''?>" placeholder="Enter user phone">
-                </div>
-            </div>
-            
-            <div class="clearfix"></div>
-            <div class="col-sm-3">
-                <div class="form-group">
-                    <label> </label>
-                    <div>
-                        <button type="submit" name="submit" value="search" id="submit" class="btn btn-primary"><i class="fa fa-fw fa-search"></i> Search</button>
-                        <a href="<?php echo $_SERVER['PHP_SELF'];?>" class="btn btn-danger"><i class="fa fa-fw fa-sync"></i> Clear</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>-->
     <div class="container" data-aos="zoom-out" data-aos-delay="300">
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
@@ -149,7 +94,6 @@ while($Result = mysqli_fetch_array($res))
             <td><center><a href="edit.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-warning"><i class="far fa-edit fa-fw"></i> </a>&nbsp;<a href="remove.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-danger"><i class="fa fa-fw fa-trash"></i></a></center></td>
-            <!--<td><center><button type="button" class="btn btn-danger mb-2 mb-md-0 btn-sm" data-toggle="modal" data-target="#staticBackdrop"><i class="fa fa-fw fa-trash"></i>-->
   Delete
 </button></center></td>
             </tr>
@@ -169,43 +113,6 @@ mysqli_close($conn);
 
     </div>
     </div>
-
-
- <!-- Confirm Delete Btn-->
- <!-- Button trigger modal 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-  Launch static backdrop modal
-</button> -->
-
-<!-- Modal 
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Do you want to detele user <?php echo $Result['name'];?> ?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a href="remove.php?ID=<?php echo $Result['ID'];?>"
-                                                class="btn btn-sm btn-danger mb-2 mb-md-0">Delete</a>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
-
-
-
-
-
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -279,94 +186,6 @@ mysqli_close($conn);
 		$data = mysqli_fetch_assoc($query);
 	}
 ?>
-
-
-<!-- Modal --
-<div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit informations</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-    <form action = "update.php" method = "post" id="CommentForm" >
-    <input type="text" name="id" value="<?php echo $data['ID']; ?>" class="form-control d-none" required>
-       <div class="form-group">
-    <label for="exampleInputusername">Username</label>
-    <input type="text" class="form-control" name = "name" value="<?php echo $data['name']; ?>" id="idName" required>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" value="<?php echo $data['mail']; ?>" aria-describedby="emailHelp" required>
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword5">Password</label>
-<input type="password" id="inputPassword5" class="form-control" name="password" value="<?php echo $data['password']; ?>" aria-describedby="passwordHelpBlock" required>
-<small id="passwordHelpBlock" class="form-text text-muted">
-  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-</small>
-  </div>
- <div class="form-group">
-    <label for="rate">Rate us!</label>
-<input type="text" name = "comment" id="idComment" value="<?php echo $data['comment']; ?>" class="form-control" name="comment">
-<small class="form-text text-muted">
-  Tell me ypur opinion about my site.⚡️
-</small>
-  </div>
-
-<div class="form-group">
-    <label for="tel">Tel</label>
-<input type="tel" name = "tel" value="<?php echo $data['tel']; ?>" id="idtel" class="form-control" pattern="+[0-9]{4}-[0-9]{3}-[0-9]{4}"
-       required>
-<small class="form-text text-muted">
-  +66xx-xxx-xxxx
-</small>
-  </div>
-
-  <div class="modal-footer">
-        <a href="shop.php" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" name="btn-save" id="commentBtn">Add user</button>
-      </div>
-</form>
-    </div>
-    </div>
-  </div>
-</div>
-<!-- End -->
-
-
-
-
-</body>
-
-
-
-
-<!--
-<script>
-const { value: accept } = await Swal.fire({
-  title: 'Terms and conditions',
-  input: 'checkbox',
-  inputValue: 1,
-  inputPlaceholder:
-    'I agree with the terms and conditions',
-  confirmButtonText:
-    'Continue&nbsp;<i class="fa fa-arrow-right"></i>',
-  inputValidator: (result) => {
-    return !result && 'You need to agree with T&C'
-  }
-})
-
-if (accept) {
-  Swal.fire('You agreed with T&C :)')
-}
-</script>
--->
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
