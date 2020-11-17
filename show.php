@@ -174,10 +174,10 @@ mysqli_close($conn);
 
 
  <!-- Confirm Delete Btn-->
- <!-- Button trigger modal -->
+ <!-- Button trigger modal 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
   Launch static backdrop modal
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
