@@ -152,7 +152,7 @@ while($Result = mysqli_fetch_array($res))
             <td><center><a href="edit.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-warning"><i class="fa fa-fw fa-edit"></i> Edit</a></center></td>
             <td><center><a href="remove.php?ID=<?php echo $Result['ID'];?>"
-                                                class="btn btn-sm btn-danger mb-2 mb-md-0">Delete</a></center></td> 
+                                                class="btn btn-sm btn-danger"><i class="fa fa-fw fa-trash"></i>Delete</a></center></td> 
             <!--<td><center><button type="button" class="btn btn-danger mb-2 mb-md-0 btn-sm" data-toggle="modal" data-target="#staticBackdrop"><i class="fa fa-fw fa-trash"></i>-->
   Delete
 </button></center></td>
