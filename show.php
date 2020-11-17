@@ -158,7 +158,7 @@ while($Result = mysqli_fetch_array($res))
             </tbody>
             </table>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add user.
+  Add user
 </button>
 
             <?php
