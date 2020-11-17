@@ -149,8 +149,11 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['comment'];?></td>
             <td><center><a href="edit.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-warning">Edit</a></center></td>
-            <td><center><a href="remove.php?ID=<?php echo $Result['ID'];?>"
-                                                class="btn btn-sm btn-danger mb-2 mb-md-0">Delete</a></center></td>
+            <!--<td><center><a href="remove.php?ID=<?php echo $Result['ID'];?>"
+                                                class="btn btn-sm btn-danger mb-2 mb-md-0">Delete</a></center></td> -->
+            <td><center><button type="button" class="btn btn-danger mb-2 mb-md-0 btn-sm" data-toggle="modal" data-target="#staticBackdrop">
+  Delete
+</button></center></td>
             </tr>
             <?php
 }
@@ -158,7 +161,7 @@ while($Result = mysqli_fetch_array($res))
             </tbody>
             </table>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add user.
+  Add user
 </button>
 
             <?php
@@ -170,7 +173,38 @@ mysqli_close($conn);
     </div>
 
 
-                <!-- Button trigger modal -->
+ <!-- Confirm Delete Btn-->
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do you want to detele user <?php echo $Result['name'];?> ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="remove.php?ID=<?php echo $Result['ID'];?>"
+                                                class="btn btn-sm btn-danger mb-2 mb-md-0">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 <!-- Modal -->
