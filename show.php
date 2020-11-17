@@ -21,9 +21,7 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   
 
-    <link rel="stylesheet" href="<a class="vglnk" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="nofollow"><span>https</span><span>://</span><span>code</span><span>.</span><span>jquery</span><span>.</span><span>com</span><span>/</span><span>ui</span><span>/</span><span>1</span><span>.</span><span>12</span><span>.</span><span>0</span><span>/</span><span>themes</span><span>/</span><span>smoothness</span><span>/</span><span>jquery</span><span>-</span><span>ui</span><span>.</span><span>css</span></a>" type="text/css">
-    <script src="<a class="vglnk" href="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" rel="nofollow"><span>https</span><span>://</span><span>code</span><span>.</span><span>jquery</span><span>.</span><span>com</span><span>/</span><span>ui</span><span>/</span><span>1</span><span>.</span><span>12</span><span>.</span><span>0</span><span>/</span><span>jquery</span><span>-</span><span>ui</span><span>.</span><span>min</span><span>.</span><span>js</span></a>" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
