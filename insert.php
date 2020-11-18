@@ -58,6 +58,12 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
+<script>
+setTimeout(function() {
+  window.location.href = 'show.html';
+}, 2000);
+</script>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
