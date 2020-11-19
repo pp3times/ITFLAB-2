@@ -30,7 +30,6 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background: rgba(1, 4, 136, 0.9);">
     <div class="container d-flex align-items-center">
-
       <div class="logo mr-auto">
         <h1 class="text-light"><a href="index.php"><span>ITFxBootstrap</span></a></h1>
       </div>
@@ -94,7 +93,6 @@ while($Result = mysqli_fetch_array($res))
             <td><center><a href="edit.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-warning"><i class="far fa-edit fa-fw"></i> </a>&nbsp;<a href="remove.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-danger"><i class="fa fa-fw fa-trash"></i></a></center></td>
-  Delete
 </button></center></td>
             </tr>
             <?php
