@@ -35,6 +35,9 @@ if (mysqli_query($conn, $sql)) {
         <div class="container">
 	   <div class="alert alert-info">
         Success
+		   <script>
+			   window.location.replace("show.php");
+		   </script>
 	   </div>
 	</div>
     <?php
