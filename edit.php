@@ -33,7 +33,7 @@
 				<div class="box shadow">
 					<div class="box-body">
 						<div class="row">
-							<center><h1 class="font-weight-light">User edit</h1></center>
+							<div class="col-6"><center><h1 class="font-weight-light">User edit</h1></center></div>
 						</div>
 						<form action="upload.php" method="post">
 							<input type="text" name="id" value="<?php echo $data['ID']; ?>" class="form-control d-none" required>
