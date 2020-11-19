@@ -69,6 +69,9 @@
         <h1>Success</h1> 
         <p>Update success!</p>
       </div>
+							<script>
+			   window.location.replace("show.php");
+		   </script>
 							<?php
 							}
 							elseif(mysqli_query($conn)){
@@ -80,7 +83,6 @@
 							}
 						?>
 						</h2>
-						<p align="center" class="mt-4 mb-0"><a href="index.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>
 			</div>
