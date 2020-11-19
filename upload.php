@@ -1,5 +1,5 @@
 <?php
-	$conn = mysqli_connect('itflabsql.mysql.database.azure.com', 'thetimes@itflabsql', 'itflab');
+	$conn = mysqli_connect('itflabsql.mysql.database.azure.com', 'thetimes@itflabsql', 'PooMlmp99', 'itflab');
 
 	$name = $_POST['name'];
 	$mail = $_POST['mail'];
