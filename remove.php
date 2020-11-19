@@ -61,6 +61,9 @@
         <h1>Success</h1> 
         <p>Remove complate!</p>
       </div>
+							<script>
+			   window.location.replace("show.php");
+		   </script>
 							<?php
 							}
 							else {
@@ -68,7 +71,6 @@
 							}
 						?>
 						</h2>
-						<p align="center" class="mt-4 mb-0"><a href="show.php" class="btn btn-sm btn-warning">BACK</a></p>
 					</div>
 				</div>
 			</div>
