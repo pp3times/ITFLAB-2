@@ -58,8 +58,8 @@
 								<input type="text" name="tel" value="<?php echo $data['tel']; ?>" class="form-control">
 							</div>
 							<div class="text-center">
-								<button type="submit" class="btn btn-sm btn-warning my-3 font-weight-bold">SAVE</button>
-								<a class="btn btn-sm btn-light my-3" href="show.php">CANCLE</a>
+								<button type="submit" class="btn btn-sm btn-warning my-3 font-weight-ligh">Save</button>
+								<a class="btn btn-sm btn-light my-3 font-weight-ligh" href="show.php">Cancle</a>
 							</div>
 						</form>
 					</div>
