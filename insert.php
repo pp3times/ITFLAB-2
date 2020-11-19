@@ -74,7 +74,7 @@ if (mysqli_query($conn, $sql)) {
         <i class="checkmark">✓</i>
       </div>
         <h1>Success</h1> 
-        <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+        <p>insert success!</p>
       </div>
 		   <script>
 			   window.location.replace("show.php");
