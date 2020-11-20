@@ -30,7 +30,6 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background: rgba(1, 4, 136, 0.9);">
     <div class="container d-flex align-items-center">
-
       <div class="logo mr-auto">
         <h1 class="text-light"><a href="index.php"><span>ITFxBootstrap</span></a></h1>
       </div>
@@ -54,7 +53,7 @@
             <div class="col-12 col-lg-8 offset-lg-2">
                 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'itflabdb.mysql.database.azure.com', 'thetimes@itflabdb', 'PooMlmp99', 'itflab', 3306);
+mysqli_real_connect($conn, 'itflabsql.mysql.database.azure.com', 'thetimes@itflabsql', 'PooMlmp99', 'itflab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -94,7 +93,6 @@ while($Result = mysqli_fetch_array($res))
             <td><center><a href="edit.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-warning"><i class="far fa-edit fa-fw"></i> </a>&nbsp;<a href="remove.php?ID=<?php echo $Result['ID'];?>"
                                                 class="btn btn-sm btn-danger"><i class="fa fa-fw fa-trash"></i></a></center></td>
-  Delete
 </button></center></td>
             </tr>
             <?php
